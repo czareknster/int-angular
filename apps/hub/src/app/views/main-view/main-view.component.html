@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a class="logo" routerLink="/app">Host App</a>
+  <span class="example-spacer"></span>
+
+  <mat-menu #menu="matMenu">
+    <a routerLink="/app/users" mat-menu-item>
+      <mat-icon>person</mat-icon>
+      <span>users </span>
+    </a>
+  </mat-menu>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

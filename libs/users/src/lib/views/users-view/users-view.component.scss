@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  padding: 0 25px;
+  height: calc(100% - 64px);
+
+  .spinner {
+    height: 100%;
+  }
+}
+table {
+  width: 100%;
+}

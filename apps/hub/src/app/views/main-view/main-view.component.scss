@@ -1,0 +1,9 @@
+a {
+  &.logo {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: #e1e1e1;
+    }
+  }
+}
