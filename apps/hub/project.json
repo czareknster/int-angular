@@ -62,7 +62,8 @@
           "browserTarget": "hub:build:production"
         },
         "development": {
-          "browserTarget": "hub:build:development"
+          "browserTarget": "hub:build:development",
+          "disableHostCheck": true
         }
       },
       "defaultConfiguration": "development"
