@@ -6,7 +6,6 @@ import { EffectsModule } from '@ngrx/effects';
 
 import { MatTableModule } from '@angular/material/table';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatButtonModule } from '@angular/material/button';
 
 import { UserRoutingModule } from './users-routing.module';
 import { STORE_KEY } from './users.consts';
@@ -24,7 +23,6 @@ import { EFFECTS } from './effects';
     UserRoutingModule,
     MatTableModule,
     MatProgressSpinnerModule,
-    MatButtonModule,
     FlexLayoutModule,
     StoreModule.forFeature(STORE_KEY, UsersReducer.reducer),
     EffectsModule.forFeature(EFFECTS),

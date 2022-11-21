@@ -3,16 +3,11 @@ import { Store } from '@ngrx/store';
 
 import { UsersState } from './../reducers/users.reducer';
 import { UsersActions } from './../actions';
-import {
-  selectAllUsers,
-  selectLoading,
-  selectUserData,
-} from './../selectors/users.selectors';
+import { selectAllUsers, selectLoading } from './../selectors/users.selectors';
 
 @Injectable()
 export class UsersFacade {
   readonly allUsers$ = this.store.select(selectAllUsers);
-  readonly userData$ = this.store.select(selectUserData);
   readonly loadingUsers$ = this.store.select(selectLoading);
 
   constructor(private store: Store<UsersState>) {}

@@ -9,5 +9,5 @@ import { UsersFacade } from '../../facades/users.facade';
 })
 export class UserViewComponent {
   constructor(private usersFacade: UsersFacade) {}
-  userData$ = this.usersFacade.userData$;
+  userData$ = this.usersFacade.
 }
